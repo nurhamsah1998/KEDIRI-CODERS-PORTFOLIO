@@ -73,6 +73,26 @@ function Footer() {
                 {
                   title: "Editors",
                 },
+                {
+                  title: "Code writter",
+                },
+                {
+                  title: "Schema Algorithm",
+                },
+              ],
+            },
+            {
+              label: "Community",
+              menus: [
+                {
+                  title: "Dialog",
+                },
+                {
+                  title: "Ideas",
+                },
+                {
+                  title: "Information",
+                },
               ],
             },
           ].map((item, index) => {
@@ -97,6 +117,9 @@ function Footer() {
             );
           })}
         </Grid>
+        <Typography textAlign="center" mt={5} fontSize={13} fontWeight={300}>
+          Kediri Coders &#169; 2022
+        </Typography>
       </Container>
     </Box>
   );

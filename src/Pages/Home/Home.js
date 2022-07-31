@@ -5,8 +5,15 @@ import { blue, deepOrange, grey } from "@mui/material/colors";
 function Home() {
   return (
     <Box>
-      <Box my={20}>
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 5 }}>
+      <Box mb={20} mt={5}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 5,
+            alignItems: "center",
+          }}
+        >
           <Box>
             <Typography color={grey[800]} fontSize={55} fontWeight={600}>
               Hello,
@@ -22,7 +29,7 @@ function Home() {
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ maxWidth: "40%" }}>
+          <Box sx={{ maxWidth: "600px" }}>
             <img
               width="100%"
               src="/svg-UNDRAW/undraw_hello_re_3evm.svg"
@@ -34,8 +41,15 @@ function Home() {
       <Divider />
       <Box my={20}>
         {" "}
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 5 }}>
-          <Box sx={{ maxWidth: "40%" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 5,
+            alignItems: "center",
+          }}
+        >
+          <Box sx={{ maxWidth: "600px" }}>
             <img
               width="100%"
               src="/svg-UNDRAW/undraw_co-working_re_w93t.svg"
@@ -71,7 +85,14 @@ function Home() {
       <Divider />
       <Box my={20}>
         {" "}
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 5 }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 5,
+            alignItems: "center",
+          }}
+        >
           <Box>
             <Typography fontSize={45} color={grey[800]} fontWeight={700}>
               Jamal KJDKDJ njdkj DK
@@ -92,7 +113,7 @@ function Home() {
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ maxWidth: "40%" }}>
+          <Box sx={{ maxWidth: "600px" }}>
             <img
               width="100%"
               src="/svg-UNDRAW/undraw_relaxing_at_home_re_mror.svg"

@@ -21,6 +21,7 @@ const navItems = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
+  { label: "Community", path: "/community" },
 ];
 
 function Index({ children }) {
@@ -68,10 +69,19 @@ function Index({ children }) {
               fontWeight={500}
               sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             >
-              Kediri{" "}
-              <span style={{ fontWeight: 600, fontSize: 23 }}>
-                <span>C</span>oder
-                <span>s</span>
+              <span style={{ display: "grid" }}>
+                <span>
+                  Kediri{" "}
+                  <span style={{ fontWeight: 600, fontSize: 23 }}>
+                    <span>C</span>oder
+                    <span>s</span>
+                  </span>
+                </span>
+                <span
+                  style={{ fontSize: 13, fontWeight: 300, marginTop: "-9px" }}
+                >
+                  keep calm and work smart
+                </span>
               </span>
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
