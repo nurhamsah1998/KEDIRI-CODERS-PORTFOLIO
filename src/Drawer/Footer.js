@@ -8,12 +8,18 @@ import {
   Button,
 } from "@mui/material";
 import { blue, deepOrange } from "@mui/material/colors";
+import Link from "@mui/material/Link";
 
 function Footer() {
   return (
     <Box sx={{ bgcolor: blue[700], color: "#fff" }}>
       <Container sx={{ py: 2 }}>
-        <Grid container>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-evenly"
+          alignItems="flex-start"
+        >
           <Grid item>
             <Typography fontSize={25} fontWeight={700}>
               LOGO
@@ -37,58 +43,59 @@ function Footer() {
               email anda
             </Typography>
           </Grid>
-          <Grid item>
-            <Grid container>
-              {[
+          {[
+            {
+              label: "Karir",
+              menus: [
                 {
-                  label: "Karir",
-                  menus: [
-                    {
-                      title: "My journey",
-                    },
-                    {
-                      title: "For learn",
-                    },
-                    {
-                      title: "My camp",
-                    },
-                    {
-                      title: "My tempe",
-                    },
-                  ],
+                  title: "My journey",
                 },
                 {
-                  label: "Company",
-                  menus: [
-                    {
-                      title: "UI/UX",
-                    },
-                    {
-                      title: "Designer",
-                    },
-                    {
-                      title: "Editors",
-                    },
-                  ],
+                  title: "For learn",
                 },
-              ].map((item, index) => {
-                return (
-                  <Grid key={index} item>
-                    <Box>
-                      <Typography fontWeight={400}>{item.label}</Typography>
-                      <Box>
-                        {item.menus.map((menu, menuIndex) => (
-                          <Typography fontSize={14} mt={-0.5}>
-                            {menu.title}
-                          </Typography>
-                        ))}
-                      </Box>
-                    </Box>
-                  </Grid>
-                );
-              })}
-            </Grid>
-          </Grid>
+                {
+                  title: "My camp",
+                },
+                {
+                  title: "My tempe",
+                },
+              ],
+            },
+            {
+              label: "Company",
+              menus: [
+                {
+                  title: "UI/UX",
+                },
+                {
+                  title: "Designer",
+                },
+                {
+                  title: "Editors",
+                },
+              ],
+            },
+          ].map((item, index) => {
+            return (
+              <Grid key={index} item>
+                <Box>
+                  <Typography fontWeight={400}>{item.label}</Typography>
+                  <Box>
+                    {item.menus.map((menu, menuIndex) => (
+                      <Link
+                        underline="none"
+                        color="inherit"
+                        href="#"
+                        key={menuIndex}
+                      >
+                        <Typography fontSize={14}>{menu.title}</Typography>
+                      </Link>
+                    ))}
+                  </Box>
+                </Box>
+              </Grid>
+            );
+          })}
         </Grid>
       </Container>
     </Box>

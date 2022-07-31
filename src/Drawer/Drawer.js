@@ -13,9 +13,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-import { Container } from "@mui/material";
 import Footer from "./Footer";
-import { blue } from "@mui/material/colors";
+import { blue, deepOrange } from "@mui/material/colors";
 
 const drawerWidth = 240;
 const navItems = [
@@ -50,7 +49,7 @@ function Index({ children }) {
   );
 
   return (
-    <Box>
+    <Box sx={{ width: "100%" }}>
       <Box sx={{ display: "flex" }}>
         <AppBar sx={{ bgcolor: blue[700] }} component="nav">
           <Toolbar>
@@ -69,7 +68,11 @@ function Index({ children }) {
               fontWeight={500}
               sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             >
-              Kediri Coders
+              Kediri{" "}
+              <span style={{ fontWeight: 600, fontSize: 23 }}>
+                <span>C</span>oder
+                <span>s</span>
+              </span>
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item, index) => (
@@ -103,7 +106,7 @@ function Index({ children }) {
             {drawer}
           </Drawer>
         </Box>
-        <Box component="main" sx={{ p: 3 }}>
+        <Box sx={{ p: 3, width: "100%" }}>
           <Toolbar />
           {children}
         </Box>
