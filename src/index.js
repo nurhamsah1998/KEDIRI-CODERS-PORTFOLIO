@@ -1,13 +1,44 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { blue } from "@mui/material/colors";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: blue[600],
+    },
+  },
+  typography: {
+    fontFamily: "Poppins",
+    fontSize: 15,
+    fontWeightMedium: 200,
+    fontWeightLight: 200,
+    fontWeightRegular: 300,
+    fontWeightBold: 900,
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "capitalize",
+          "&:hover": {
+            background: "",
+          },
+        },
+      },
+    },
+  },
+});
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
