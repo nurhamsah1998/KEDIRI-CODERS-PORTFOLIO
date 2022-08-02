@@ -5,7 +5,7 @@ import { blue, deepOrange, grey } from "@mui/material/colors";
 function Home() {
   return (
     <Box>
-      <Box mb={20} mt={5}>
+      <Box mb={10} mt={5}>
         <Box
           sx={{
             display: "flex",
@@ -29,33 +29,29 @@ function Home() {
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ maxWidth: "600px" }}>
-            <img
-              width="100%"
-              src="/svg-UNDRAW/undraw_hello_re_3evm.svg"
-              alt="Hero"
-            />
-          </Box>
         </Box>
       </Box>
       <Divider />
-      <Box my={20}>
-        {" "}
+      <Typography fontSize={25} textAlign="center" mt={10}>
+        Lorem epsum
+      </Typography>
+      <Box
+        my={10}
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          gap: 5,
+          alignItems: "flex-start",
+        }}
+      >
         <Box
           sx={{
+            maxWidth: "50%",
             display: "flex",
             justifyContent: "center",
-            gap: 5,
             alignItems: "center",
           }}
         >
-          <Box sx={{ maxWidth: "600px" }}>
-            <img
-              width="100%"
-              src="/svg-UNDRAW/undraw_co-working_re_w93t.svg"
-              alt="Hero"
-            />
-          </Box>
           <Box sx={{ textAlign: "right" }}>
             <Typography fontSize={45} color={grey[800]} fontWeight={700}>
               Pengerjaan{" "}
@@ -81,21 +77,17 @@ function Home() {
             </Box>
           </Box>
         </Box>
-      </Box>
-      <Divider />
-      <Box my={20}>
-        {" "}
         <Box
           sx={{
+            maxWidth: "50%",
             display: "flex",
             justifyContent: "center",
-            gap: 5,
             alignItems: "center",
           }}
         >
           <Box>
             <Typography fontSize={45} color={grey[800]} fontWeight={700}>
-              Jamal KJDKDJ njdkj DK
+              Memiliki kualitas baik
             </Typography>
             <Box>
               <Typography
@@ -104,8 +96,8 @@ function Home() {
                 color={grey[800]}
                 fontWeight={600}
               >
-                Pengerjaan yang{" "}
-                <span style={{ color: blue[500] }}>berpengalaman.</span>
+                serta didukung berbagai channel{" "}
+                <span style={{ color: blue[500] }}>Ternama.</span>
               </Typography>
               <Typography mt={1}>
                 Consequat commodo quis ipsum aliqua consequat amet esse id
@@ -113,15 +105,9 @@ function Home() {
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ maxWidth: "600px" }}>
-            <img
-              width="100%"
-              src="/svg-UNDRAW/undraw_relaxing_at_home_re_mror.svg"
-              alt="Hero"
-            />
-          </Box>
         </Box>
       </Box>
+      <Divider />
     </Box>
   );
 }
