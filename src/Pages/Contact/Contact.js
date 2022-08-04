@@ -16,10 +16,10 @@ function Contact() {
           />
         </Box>
         <Typography mt={1} textAlign="center" fontSize={34} color={grey[800]}>
-          Jangan ragu untuk menghubungi kami
+          Jangan ragu untuk menghubungi saya
         </Typography>
         <Typography textAlign="center" fontSize={15} color={grey[800]}>
-          Hubungi kami melalui email ataupun nomor whatsapp, kami akan merespon
+          Hubungi saya melalui email ataupun nomor whatsapp, saya akan merespon
           secepat mungkin
         </Typography>
         <Box

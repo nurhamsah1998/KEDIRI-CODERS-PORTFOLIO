@@ -9,8 +9,8 @@ function About() {
 
   return (
     <Box my={10}>
-      <Box sx={{ display: "flex", justifyContent: "center", gap: 10 }}>
-        <Box sx={{ width: "50%", display: "flex", justifyContent: "flex-end" }}>
+      <Box sx={{ display: "flex", gap: 10 }}>
+        <Box sx={{ width: "25%" }}>
           <Box
             sx={{
               height: "600px",
