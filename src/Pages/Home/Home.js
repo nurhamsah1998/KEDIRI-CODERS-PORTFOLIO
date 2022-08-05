@@ -38,7 +38,7 @@ function Home() {
       <Box
         my={10}
         sx={{
-          display: "flex",
+          display: { lg: "flex", xl: "flex", md: "flex", xs: "grid" },
           justifyContent: "center",
           gap: 5,
           alignItems: "flex-start",
@@ -46,7 +46,7 @@ function Home() {
       >
         <Box
           sx={{
-            maxWidth: "50%",
+            maxWidth: { lg: "50%", xl: "50%", md: "50%", xs: "100%" },
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -79,7 +79,7 @@ function Home() {
         </Box>
         <Box
           sx={{
-            maxWidth: "50%",
+            maxWidth: { lg: "50%", xl: "50%", md: "50%", xs: "100%" },
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
