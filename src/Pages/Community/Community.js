@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import CommunityLogin from "./CommunityLogin";
 
 function Community() {
+  const [state, setState] = useState(null);
   const navigate = useNavigate();
-  const accessToken = localStorage.getItem("accessToken");
-  React.useEffect(() => {
-    if (!accessToken) {
-      navigate("/community/login");
-      console.log("qwe");
-    }
+  useEffect(() => {
+    const accessToken = localStorage.getItem("accessToken");
     if (accessToken) {
-      navigate("/community/home");
-      console.log("qwe");
+      setState(<Home />);
     }
-  }, [accessToken]);
-  return false;
+    if (!accessToken) {
+      setState(<CommunityLogin />);
+    }
+  }, []);
+  return state;
 }
 
 export default Community;
